@@ -1,0 +1,11 @@
+.cardTitleAndHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardTitleAndHeader .cardHeaderIcon {
+  justify-self: flex-end;
+  color: white;
+  font-size: 24px;
+}
