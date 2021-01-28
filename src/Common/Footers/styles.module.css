@@ -1,0 +1,12 @@
+.footer {
+  display: "flex  !important";
+  width: "100% !important";
+  top: "720px !important";
+  flex-direction: "row !important";
+  justify-content: "space-between !important";
+  position: "fixed !important";
+  left: "0 !important";
+  bottom: "0 !important";
+  color: "white !important";
+  text-align: "center !important";
+}
