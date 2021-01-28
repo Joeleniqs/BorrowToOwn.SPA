@@ -7,7 +7,20 @@ import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 function Footer(props) {
   return (
     <>
-      <footer className="py-5">
+      <footer
+        className="py-5"
+        style={{
+          display: "flex",
+          width: "100%",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          position: "fixed",
+          left: "0",
+          bottom: "0",
+          color: "white",
+          textAlign: "center",
+        }}
+      >
         <Container>
           <Row className="align-items-center justify-content-xl-between">
             <Col xl="6">

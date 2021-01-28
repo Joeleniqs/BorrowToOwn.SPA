@@ -1,4 +1,6 @@
 import React from "react";
+import { amountFormatter } from "../../../utils/amountFormatter";
+import apiAxios from "../../../httpClient/borrowApiInstance";
 
 // reactstrap components
 import {
@@ -11,9 +13,11 @@ import {
   Progress,
   UncontrolledTooltip,
 } from "reactstrap";
+import { notificationHandler } from "../../../utils/notificationHandler";
 
-const Product = (prop) => {
-  const { product } = prop;
+const Product = (props) => {
+  const { product } = props;
+
   return (
     <tr>
       <th scope="row">
@@ -33,13 +37,14 @@ const Product = (prop) => {
           </Media>
         </Media>
       </th>
-      <td>$2,500 USD</td>
+      <td>$25,000</td>
       <td>
         <Badge color="" className="badge-dot mr-4">
           <i className="bg-warning" />
           pending
         </Badge>
       </td>
+      <td> {amountFormatter(product.actualPrice)} </td>
       <td>
         <div className="avatar-group">
           <a
@@ -125,13 +130,13 @@ const Product = (prop) => {
             <i className="fas fa-ellipsis-v" />
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-arrow" right>
-            <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+            <DropdownItem onClick={(e) => props.viewHandler(e, product)}>
               View
             </DropdownItem>
-            <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+            <DropdownItem onClick={(e) => props.updateHandler(e, product)}>
               Edit
             </DropdownItem>
-            <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+            <DropdownItem onClick={(e) => props.viewHandler(e, product)}>
               Set InActive
             </DropdownItem>
           </DropdownMenu>
