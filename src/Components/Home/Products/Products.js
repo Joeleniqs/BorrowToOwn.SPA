@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Products.module.css";
 import Product from "./Product/Product";
+import "../../../assets/css/variables.module.css"
 
 const Products = () => {
     const resentlyAdded = [

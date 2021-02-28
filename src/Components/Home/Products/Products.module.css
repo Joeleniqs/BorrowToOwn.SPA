@@ -1,26 +1,3 @@
-:root {
-  --mainSpacing: 0.1rem;
-  --mainTranstion: all .4s ease-in-out;
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --main-black: #222;
-  --secondGray: #ececec;
-  --mainGray: #c6c6c6;
-  --main-box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
-  --mian-max-width: 1170px; 
-}
-/* CONTENT AREA */
-.contentArea {
-  margin: auto;
-  background-color: lightblue;
-  margin-top: 6.75rem;
-  /* top: 6rem;
-  position: absolute; */
-  width: 90%;
-  height: 15rem;
-  text-align: center;
-}
-/* PRODUCTS */
 .products{
   width: 100%;
   height: 100%;
@@ -29,7 +6,7 @@
   z-index: 1;
 }
 .productsTitle h2{
-  color: #222;
+  color: var(--main-black);
   text-transform: capitalize;
   font-family: monospace;
   font-size: 3.5rem;
@@ -63,7 +40,7 @@
   margin-bottom: 0.8rem;
 }
 .catName {
-  color: rgb(50, 50, 50);
+  color: var(--main-black);
   font-size: 1.4rem;
   margin: 0;
   text-align: center;
@@ -77,26 +54,23 @@
   background-color: #c6c6c6;
   opacity: 0.9;
 }
-  
-/* View More Button */
 .moreButton{
   box-sizing: border-box;
   padding: 0.8rem 1.5rem;
   margin: 1rem auto;
   width: 60%;
   border: 1px solid #535353;
-  font-size: 1.1rem;
-  color: #222;
-  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  color: var(--main-black);
+  letter-spacing: var(--mainSpacing);
   background-color: transparent;
   display: block;
   outline: none;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  transition: var(--mainTranstion);
   cursor: pointer;
 }
 .moreButton:hover{
-  /* box-shadow: 0 1px 3px rgba(0,0,0, 0.4); */
   animation: btnAnim 0.3s linear;
 }
   
