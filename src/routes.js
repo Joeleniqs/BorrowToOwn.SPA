@@ -1,6 +1,7 @@
 import Register from "./Components/Register/Register";
 import Categories from "./Components/Categories/Categories";
 import Products from "./Components/Products/Products";
+import ProductDetail from "./Components/ProductDetail/productDetail";
 import Login from "./Components/Login/Login";
 import PaymentPlans from "./Components/PaymentPlans/PaymentPlans";
 import Orders from "./Components/Orders/Orders";
@@ -8,6 +9,13 @@ import AdminDashBoard from "./Components/DashBoard/AdminDashBoard";
 import Homepage from "./Components/Home/Index";
 
 var routes = [
+  {
+    path: "/product-details/:productId",
+    name: "ProductDetail",
+    icon: "ni ni-key-25 text-info",
+    component: ProductDetail,
+    layout: "/index",
+  },
   {
     path: "/Index",
     name: "Dashboard",
@@ -64,6 +72,7 @@ var routes = [
     component: Homepage,
     layout: "/index",
   },
+
   //   {
   //     path: "/Index/Product/:id",
   //     name: "Product By Id",
