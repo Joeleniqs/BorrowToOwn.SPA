@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { Carousel } from "antd";
 import FilterSideBar from "../../Common/Sidebar/FilterSidebar/FilterSideBar";
 import styles from "./styles.module.css";
-import inlineStyle from "./styles";
+import inlineStyle  from "./styles";
 import carousel1 from "../../assets/img/brand/carousel2.jpeg";
+import Products from "./Products/Products"
 
 const Homepage = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const Homepage = () => {
             </div>
           </Carousel>
         </div>
+        <Products/>
       </>
     );
   };

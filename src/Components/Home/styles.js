@@ -1,5 +1,5 @@
 const contentStyle = {
-  height: "50rem",
+  height: "15rem",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",

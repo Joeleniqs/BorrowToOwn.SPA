@@ -1,0 +1,8 @@
+:root {
+    --mainSpacing: 0.1rem;
+    --mainTranstion: all 0.3s ease-in-out;
+    --mainWhite: #fff;
+    --main-black: #222;
+    --mainGray: #c6c6c6;
+    --main-box-shadow: 0 4px 10px rgba(0,0,0, 0.3);
+  }

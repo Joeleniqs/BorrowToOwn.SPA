@@ -1,9 +1,8 @@
 .contentArea {
   margin: auto;
   background-color: lightblue;
-  top: 6rem;
-  position: fixed;
+  margin-top: 6.75rem;
   width: 90%;
-  height: 50rem;
+  height: 15rem;
   text-align: center;
 }
