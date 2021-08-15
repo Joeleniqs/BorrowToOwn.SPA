@@ -5,6 +5,9 @@ import React from "react";
 import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 
 function Footer(props) {
+
+  let today = new Date()
+  
   return (
     <>
       <footer
@@ -14,7 +17,7 @@ function Footer(props) {
           width: "100%",
           flexDirection: "row",
           justifyContent: "space-between",
-          position: "fixed",
+          position: "relative",
           left: "0",
           bottom: "0",
           color: "white",
@@ -25,7 +28,7 @@ function Footer(props) {
           <Row className="align-items-center justify-content-xl-between">
             <Col xl="6">
               <div className="copyright text-center text-xl-left text-muted">
-                © 2018{" "}
+                © {today.getFullYear()}{" "}
                 <a
                   className="font-weight-bold ml-1"
                   href="https://www.creative-tim.com?ref=adr-auth-footer"

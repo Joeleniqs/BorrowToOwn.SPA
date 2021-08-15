@@ -2,10 +2,11 @@
   width: 100%;
   height: 100%;
   padding: 0.2rem 0;
-  margin: 5rem auto;
+  margin: 1rem auto;
   z-index: 1;
 }
-.productsTitle h2{
+.productsTitle h1{
+  line-height: 1.25;
   color: var(--main-black);
   text-transform: capitalize;
   font-family: monospace;
@@ -15,6 +16,8 @@
   letter-spacing: var(--mainSpacing);
 }
 .titleUnderline{
+  /* width: 6rem; */
+  /* height: 0.25rem; */
   height: 5px;
   border-radius: 10px;
   width: 230px;
@@ -31,7 +34,7 @@
   padding: 0 2rem;
 }
 .productCategory{
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1rem 0;
 }
 .catTitle{
@@ -41,6 +44,7 @@
 }
 .catName {
   color: var(--main-black);
+  line-height: 1.25;
   font-size: 1.4rem;
   margin: 0;
   text-align: center;
@@ -60,6 +64,7 @@
   margin: 1rem auto;
   width: 60%;
   border: 1px solid #535353;
+  line-height: 1.25;
   font-size: 1.2rem;
   color: var(--main-black);
   letter-spacing: var(--mainSpacing);

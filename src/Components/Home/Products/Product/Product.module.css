@@ -6,12 +6,13 @@
 .product:hover{
   box-shadow: var(--main-box-shadow);
 }
-.product > h3{
+.product > p{
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   color: var(--main-black);
   margin-top: 5px;
-  font-size: 0.8rem;
+  line-height: 1.25;
+  font-size: .9rem;
   text-align: center;
   margin-top: 1rem;
   padding: 0 1rem;
@@ -20,12 +21,13 @@
   text-align: center;
   letter-spacing: 0.1rem;
   font-weight: bold;
-  font-size: 0.8rem;
+  line-height: 1.25;
+  font-size: 1rem;
   color: #0f4bb9;
 }
 .underline{
   letter-spacing: normal;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   color: var(--main-black);
   text-decoration: line-through;
@@ -44,7 +46,8 @@
 .myBtn{
   letter-spacing: 0.05rem;
   padding: 0.35rem 1.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.25;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--main-black);

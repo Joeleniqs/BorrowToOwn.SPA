@@ -15,6 +15,7 @@ function FrontChannel(props) {
       isRegisterPage ? renderRegistrationHeader() : renderIndexHeader()
     );
   }, [props.location.pathname]);
+
   const getRoutes = (routes) => {
     console.log(routes);
     let finalRoutes = routes.map((prop, key) => {
@@ -33,6 +34,7 @@ function FrontChannel(props) {
     });
     return finalRoutes;
   };
+
   const renderRegistrationHeader = () => {
     return (
       <div className="header bg-gradient-info py-7 py-lg-8">
@@ -63,9 +65,11 @@ function FrontChannel(props) {
       </div>
     );
   };
+
   const renderIndexHeader = () => {
     return <div className={styles.indexHeader}></div>;
   };
+
   return (
     <>
       <div
