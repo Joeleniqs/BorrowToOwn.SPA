@@ -4,7 +4,7 @@ import Product from "./Product/Product";
 import "../../../assets/css/variables.module.css"
 
 const Products = () => {
-    const resentlyAdded = [
+    const recentlyAdded = [
         {
           title: "UMIDIGI A7S 6.53-Inch (2GB,32GB ROM)",
           price: 39900,
@@ -108,7 +108,7 @@ const Products = () => {
       }
     ]
 
-    let rAdded = resentlyAdded.slice(0, 8)
+    let rAdded = recentlyAdded.slice(0, 8)
     rAdded = rAdded.map(a => (
       <Product key={a.id} title={a.title} price={a.price} slashed={a.slashed} img={a.img} imm="product-2.jpg" />
     ))
@@ -121,7 +121,7 @@ const Products = () => {
         <>
           <div className={styles.products} >
             <div className={styles.productsTitle} >
-              <h2>products</h2>
+              <h1>products</h1>
               <div className={styles.titleUnderline}></div>
             </div>
 

@@ -12,7 +12,7 @@ const Product = (props) => {
                     add to cart
                 </div>
             </div>
-            <h3>{props.title}</h3>
+            <p>{props.title}</p>
             <h4>#{props.price} <span className={styles.underline}>#{props.slashed}</span></h4>
       </div>
     {/* //end of single product */}
