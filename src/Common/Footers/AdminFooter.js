@@ -2,12 +2,13 @@ import React from "react";
 import { NavItem, NavLink, Nav, Row, Col } from "reactstrap";
 
 function AdminFooter(props) {
+  const currDate = new Date().getFullYear();
   return (
     <footer className="footer">
       <Row className="align-items-center justify-content-xl-between">
         <Col xl="6">
           <div className="copyright text-center text-xl-left text-muted">
-            © 2020{" "}
+            © {currDate}{" "}
             <a
               className="font-weight-bold ml-1"
               href="https://www.creative-tim.com?ref=adr-admin-footer"

@@ -7,6 +7,8 @@ import carousel1 from "../../assets/img/brand/carousel2.jpeg";
 import Products from "./Products/Products";
 import Container from "reactstrap/lib/Container";
 import BackgroundImg from "./../../assets/images/elect.png";
+import secBack from "./../../assets/images/ecom.jpg";
+import PageWrapper from "../HOC/PageWrapper";
 
 const Homepage = () => {
   useEffect(() => {
@@ -34,33 +36,62 @@ const Homepage = () => {
   const homePageRender = () => {
     return (
       <>
-        <div className={styles.contentArea}>
-          <Carousel autoplay>
-            <div>
-              <h3 style={inlineStyle.contentStyle}>1</h3>
-            </div>
-            <div>
-              <h3 style={inlineStyle.contentStyle}>2</h3>
-            </div>
-            <div>
-              <h3 style={inlineStyle.contentStyle}>3</h3>
-            </div>
-            <div>
-              <h3 style={inlineStyle.contentStyle}>4</h3>
-            </div>
-          </Carousel>
-        </div>
-        <div className={styles.home}>
-          <div className={styles.imgContainer}>
-            <img className={styles.picSlide} src={BackgroundImg} />
+        <PageWrapper>
+          <div className={styles.contentArea}>
+            <Carousel autoplay>
+              <div>
+                {/* <h3 style={inlineStyle.contentStyle}>1</h3> */}
+                <div className={styles.home}>
+                  <div className={styles.imgContainer}>
+                    <img className={styles.picSlide} src={BackgroundImg} />
+                  </div>
+                  <div className={styles.content}>
+                    <h1>borrow to own</h1>
+                    <h3>Everything On A Payment Plan</h3>
+                    <button>about us</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className={styles.home}>
+                  <div className={styles.imgContainer}>
+                    <img className={styles.picSlide} src={secBack} />
+                  </div>
+                  <div className={styles.content}>
+                    <h1>borrow to own</h1>
+                    <h3>Everything On A Payment Plan</h3>
+                    <button>about us</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className={styles.home}>
+                  <div className={styles.imgContainer}>
+                    <img className={styles.picSlide} src={BackgroundImg} />
+                  </div>
+                  <div className={styles.content}>
+                    <h1>borrow to own</h1>
+                    <h3>Everything On A Payment Plan</h3>
+                    <button>about us</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className={styles.home}>
+                  <div className={styles.imgContainer}>
+                    <img className={styles.picSlide} src={BackgroundImg} />
+                  </div>
+                  <div className={styles.content}>
+                    <h1>borrow to own</h1>
+                    <h3>Everything On A Payment Plan</h3>
+                    <button>about us</button>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
           </div>
-          <div className={styles.content}>
-            <h1>borrow to own</h1>
-            <h3>Everything On A Payment Plan</h3>
-            <button>about us</button>
-          </div>
-        </div>
-        <Products />
+          <Products />
+        </PageWrapper>
       </>
     );
   };

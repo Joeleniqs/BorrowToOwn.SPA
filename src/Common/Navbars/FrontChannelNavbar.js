@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ShoppingCartOutlined } from "@ant-design/icons";
 
 // reactstrap components
 import {
@@ -23,6 +24,10 @@ import {
 class FrontChannelNavbar extends React.Component {
   state = {
     searchField: "",
+    cart: [],
+  };
+  changeAmount = () => {
+    console.log("jhvjhgvhgchgf");
   };
   handleSearch = (event) => {
     event.preventDefault();
@@ -128,6 +133,12 @@ class FrontChannelNavbar extends React.Component {
                     <i className="ni ni-key-25" />
                     <span className="nav-link-inner--text">Login</span>
                   </NavLink>
+                </NavItem>
+                <NavItem>
+                  <div onClick={this.getItem} className="cartDiv">
+                    <ShoppingCartOutlined className="cartIcon" />
+                    <span className="cartAmount">0</span>
+                  </div>
                 </NavItem>
               </Nav>
             </UncontrolledCollapse>

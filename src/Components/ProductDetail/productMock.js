@@ -3,10 +3,10 @@ export const productMock = {
   subCategoryId: 8,
   categoryId: 1,
   brandId: 3,
-  name: "Techno Spark 4",
+  name: "Techno Spark 4 2GB RAM 32 GB ROM 166.7 x 75.8 x 8.4 mm (6.56 x 2.98 x 0.33 in)",
   quantity: 5,
   actualPrice: 55000,
-  model: "Spark 4",
+  model: "Tecno",
   availableSizes: [],
   availableColours: [],
   description:

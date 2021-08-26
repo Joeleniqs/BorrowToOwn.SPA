@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #222;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 1rem;
+}
+section > :nth-child(2) {
+  height: 70vh;
+}
+.main {
+  margin-top: 4rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.semi {
+  margin-top: 4rem;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 5rem;
+}
+.container p {
+  font-size: 1.2rem;
+}
+.imgContainer {
+  height: 100%;
+}
+.imgContainer img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.divFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .smallBox {
+  margin: 0.5rem 2px 0 0;
+  font-size: 20px;
+  color: #6487c7;
+}
+.flex2 {
+  display: flex;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  margin: 0 0.5rem;
+  border: solid 1px #c6c6c6;
+}
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.bigBox {
+  height: 130px;
+  width: 130px;
+  margin-right: 0.2rem;
+  border: solid 1px #c6c6c6;
+}
+.bigBox img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.productDetail {
+  padding-left: 10px;
+}
+.container h1.name {
+  font-size: 1.5rem;
+  width: 705;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #282828;
+}
+.container h2 {
+  color: #222;
+  font-weight: 600;
+}
+.container h4 {
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 300;
+}
+.container h4 span {
+  padding: 3px 8px;
+  color: #fff;
+  font-weight: 400;
+  background-color: #00b000;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  width: 300px;
+}
+.container p {
+  color: #666666;
+}
+.container h5 {
+  font-size: 1.1rem;
+  color: #545454;
+  /* background-color: #145ce4;
+  padding: 0.1rem 0.2rem; */
+  display: inline-block;
+}
+.buttomBorder {
+  margin: 3rem 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+.slimBorder {
+  border-bottom: 1px solid #c6c6c6;
+}
+.btnDiv {
+  margin: 2rem 0;
+}
+.addToCart {
+  width: 13rem;
+  cursor: pointer;
+  background-color: rgb(32, 144, 250);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.buyNow {
+  text-transform: capitalize;
+  width: 13rem;
+  margin-top: 0.9rem;
+  cursor: pointer;
+  background-color: rgba(13, 104, 156, 0.9);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  font-size: 1.3rem;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.25);
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+.semi h2 {
+  color: #545454;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #6487c7;
+}
+.semi h4 {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.semi label {
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+.semi input[type="text"] {
+  padding: 0.5rem;
+  outline: none;
+  line-height: 1.3rem;
+  color: #333333;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  border: 1px solid #c6c6c6;
+}

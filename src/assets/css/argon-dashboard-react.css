@@ -68,6 +68,29 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.cartDiv {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 3rem;
+  padding: 2px;
+}
+.cartIcon {
+  font-size: 40px;
+  color: #222;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 0.35rem 0.3rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  background-color: #fff;
+  color: blue;
+}
+
 @-ms-viewport {
   width: device-width;
 }

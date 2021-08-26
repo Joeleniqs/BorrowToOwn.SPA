@@ -5,6 +5,8 @@ import routes from "../../routes";
 import FrontChannelNavbar from "../../Common/Navbars/FrontChannelNavbar";
 import Footer from "../../Common/Footers/Footer";
 import styles from "./styles.module.css";
+import ProductDetail from "../ProductDetail/productDetail";
+import Product from "../Products/Product/Product";
 
 function FrontChannel(props) {
   const [header, setHeader] = useState(null);
