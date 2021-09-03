@@ -3,31 +3,14 @@ import { productMock } from "./productMock";
 import Styles from "./styles.module.css";
 import { StarFilled } from "@ant-design/icons";
 import PageWrapper from "../HOC/PageWrapper";
+import { useFrontChannelNavbarContext } from "../../Contexts/FrontChannelHeaderContext";
 
 const ProductDetail = (props) => {
+  const navBarContext = useFrontChannelNavbarContext();
   console.log(props);
   const [picIndex, setPicIndex] = useState(0);
-  const [item, setItem] = useState(productMock);
-  const [cart, setCart] = useState([]);
-  useEffect(() => {
-    getc();
-  }, []);
-  useEffect(() => {
-    savecart();
-  }, [cart]);
-
-  const addToCart = () => {
-    setCart([...cart, item]);
-  };
-  const savecart = () => {
-    localStorage.setItem("BTOwnCart", JSON.stringify(cart));
-  };
-  const getc = () => {
-    let nnn = JSON.parse(localStorage.getItem("BTOwnCart"))
-      ? JSON.parse(localStorage.getItem("BTOwnCart"))
-      : [];
-    setCart(nnn);
-  };
+  const [item, _] = useState(productMock);
+  const { addToCart, getCart } = navBarContext;
   return (
     <PageWrapper>
       <section>
@@ -86,7 +69,10 @@ const ProductDetail = (props) => {
                 AVAILABILITY: <span>IN STOCK</span>
               </h4>
               <div className={Styles.btnDiv}>
-                <button onClick={addToCart} className={Styles.addToCart}>
+                <button
+                  onClick={() => addToCart(item.id)}
+                  className={Styles.addToCart}
+                >
                   add to cart
                 </button>
                 <button className={Styles.buyNow}>buy now</button>
